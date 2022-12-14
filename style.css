@@ -1,0 +1,35 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+.bg-container{
+    background-image: radial-gradient(rgb(190, 116, 116), rgb(57, 131, 169));
+    height: 100vh;
+    width:100vw;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.movement{
+    position:absolute;
+    top:40%;
+    left:45%;
+    background:transparent url('Movements.png') 0 0 no-repeat;
+    width:600px;
+    height:600px;
+    transform:translate(-50%,-50%);
+    margin:2em auto;
+    animation: move 3s steps(25) infinite;
+}
+
+@keyframes move {
+    from{
+        background-position: 0;
+    }
+    to {
+        background-position: -16775px; 
+      }
+}
